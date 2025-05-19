@@ -1,0 +1,16 @@
+.image {
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .image {
+      height: auto;
+      max-height: 60vh; /* Adjust based on preference */
+    }
+  }

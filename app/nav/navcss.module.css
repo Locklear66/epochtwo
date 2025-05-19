@@ -1,0 +1,91 @@
+.container {
+  margin-top: 0;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  text-align: center;
+  background: transparent;
+  width: 100%;
+  z-index: 100;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 0 1.5rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: cursive;
+  color: rgb(217, 193, 56);
+  font-weight: bold;
+  background: transparent;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(217, 193, 56);
+  background: none;
+  border: none;
+  z-index: 150;
+}
+
+/* Nav links default (desktop) */
+.nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(217, 193, 56);
+  text-decoration: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 2rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%; /* You can adjust width as needed */
+    height: 100vh;
+    gap: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    z-index: 400;
+  }
+
+  .nav__links.open {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+
+
+  

@@ -1,0 +1,76 @@
+.container {
+  margin-top: 0;
+  z-index: 100;
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  text-align: center;
+  font-family: cursive;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.hero {
+  color: black;
+  font-size: 40px;
+}
+
+.para {
+  font-size: 25px;
+  margin-top: 1rem;
+  z-index: 20;
+}
+
+.cta_buttons {
+  padding: 12px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn_gold {
+  background-color: #e0b94d;
+  color: #000;
+  font-family: cursive;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btn_dark {
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: cursive;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+  .container {
+    top: 12rem;
+    padding: 0 1rem;
+  }
+
+  .hero {
+    font-size: 28px;
+  }
+
+  .para {
+    font-size: 18px;
+  }
+
+  .btn_gold,
+  .btn_dark {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin: 10px 5px;
+  }
+}

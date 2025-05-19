@@ -1,7 +1,7 @@
 import React from 'react'
 import pagecss from './main.module.css'
 import Image from 'next/image'
-import background from "/public/background.png"
+import background from "/public/background.webp"
 
 export default function main() {
   return (

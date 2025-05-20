@@ -11,7 +11,7 @@
 }
 
 .hero {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 40px;
 }
 
@@ -19,6 +19,7 @@
   font-size: 25px;
   margin-top: 1rem;
   z-index: 20;
+  color: white;
 }
 
 .cta_buttons {
@@ -57,6 +58,7 @@
   .container {
     top: 12rem;
     padding: 0 1rem;
+    z-index: 600;
   }
 
   .hero {

@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import React from 'react'
 import navcss from './navcss.module.css'
-import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
+import Link from 'next/link'
 
 export default function nav() {
 
@@ -27,7 +27,7 @@ export default function nav() {
         <ul className={`${navcss.nav__links} ${menuOpen ? navcss.open : ''}`}>
             <li><a className={navcss.link} href="#">Home</a></li>
             <li><a className={navcss.link} href="#">Lore</a></li>
-            <li><a className={navcss.link} href="#">Media</a></li>
+            <li><Link className={navcss.link} href="/media">Media</Link></li>
             <li><a className={navcss.link} href="#">Community</a></li>
             <li><a className={navcss.link} href="#">Sign Up</a></li>
           </ul>

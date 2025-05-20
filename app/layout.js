@@ -4,6 +4,7 @@ import Home from './page'
 import Main from './main/main'
 import Header from './header/header'
 import Feature from './features/features'
+import Media from './media/media'
 
 export default function RootLayout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Header /> 
         <Feature />
+        <Media />
         <Home />
         {children}
       </body>

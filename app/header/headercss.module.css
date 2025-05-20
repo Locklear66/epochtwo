@@ -58,7 +58,8 @@
   .container {
     top: 12rem;
     padding: 0 1rem;
-    z-index: 600;
+
+    border: 1px solid red;
   }
 
   .hero {

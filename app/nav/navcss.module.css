@@ -1,15 +1,12 @@
 .container {
   margin-top: 0;
-  position: absolute;
+  position: fixed;
   top: 3rem;
   left: 0;
   text-align: center;
   background: transparent;
   width: 100%;
-  z-index: 100;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
+  z-index: 1000;
   padding: 0 1.5rem;
 }
 
@@ -29,7 +26,7 @@
   color: rgb(217, 193, 56);
   background: none;
   border: none;
-  z-index: 150;
+  z-index: 999;
 }
 
 /* Nav links default (desktop) */
@@ -57,7 +54,20 @@
     position: absolute;
     top: 0.5rem;
     right: 1rem;
+    z-index: 1000;
   }
+
+  .hamburger.open .icon {
+    content: "✖";
+  }
+
+  
+
+  .hamburger.open .icon::before {
+    content: "✖";
+  }
+
+}
 
   .nav__links {
     display: none;
@@ -66,15 +76,15 @@
     justify-content: flex-start;
     background-color: rgba(0, 0, 0, 0.95);
     padding: 2rem 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 25%; /* You can adjust width as needed */
+    width: 35%; /* You can adjust width as needed */
     height: 100vh;
     gap: 1.5rem;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
-    z-index: 400;
+    z-index: 998;
   }
 
   .nav__links.open {
@@ -84,7 +94,7 @@
   .logo {
     font-size: 2rem;
   }
-}
+
 
 
 

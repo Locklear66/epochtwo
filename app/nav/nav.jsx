@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import React from 'react'
 import navcss from './navcss.module.css'
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 
 export default function nav() {
 
@@ -20,7 +21,7 @@ export default function nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle Menu"
         >
-          ☰
+          <span className={navcss.icon}>☰</span>
         </button>
 
         <ul className={`${navcss.nav__links} ${menuOpen ? navcss.open : ''}`}>

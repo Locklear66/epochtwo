@@ -26,7 +26,7 @@
   color: rgb(217, 193, 56);
   background: none;
   border: none;
-  z-index: 999;
+  z-index: 1006;
 }
 
 /* Nav links default (desktop) */
@@ -54,7 +54,7 @@
     position: absolute;
     top: 0.5rem;
     right: 1rem;
-    z-index: 1000;
+    z-index: 1006;
   }
 
   .hamburger.open .icon {
